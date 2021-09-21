@@ -5,6 +5,10 @@ buildscript {
         objectboxVersion = '2.9.1'
         kotlin_version = "1.4.30"
         junit_version = '5.7.2'
+        camerax_version = "1.1.0-alpha08"
+        camerax_view_version = "1.0.0-alpha28"
+        camerax_extensioins_version = "1.0.0-alpha28"
+        barcode_scanning_version = "17.0.0"
     }
     repositories {
         google()
