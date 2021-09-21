@@ -3,26 +3,31 @@
     <item android:id="@+id/menuArticles"
         android:enabled="true"
         android:icon="@drawable/ic_read_articles"
-        android:title="О переработке"/>
+        android:title=""/>
+<!--        android:title="О переработке"/>-->
 
     <item android:id="@+id/menuMap"
         android:enabled="true"
         android:icon="@drawable/ic_map"
-        android:title="Пункты утилизаци"/>
+        android:title=""/>
+<!--        android:title="Пункты утилизаци"/>-->
 
     <item android:id="@+id/menuRecycle"
         android:enabled="true"
         android:icon="@drawable/ic_recycle"
-        android:title="Утилизируй!"/>
+        android:title=""/>
+<!--        android:title="Утилизируй!"/>-->
 
     <item android:id="@+id/menuBookmark"
         android:enabled="true"
         android:icon="@drawable/ic_bookmark"
-        android:title="Созранения"/>
+        android:title=""/>
+<!--        android:title="Созранения"/>-->
 
     <item android:id="@+id/menuSettings"
         android:enabled="true"
         android:icon="@drawable/ic_settings"
-        android:title="Настройки"/>
+        android:title=""/>
+<!--        android:title="Настройки"/>-->
 
 </menu>

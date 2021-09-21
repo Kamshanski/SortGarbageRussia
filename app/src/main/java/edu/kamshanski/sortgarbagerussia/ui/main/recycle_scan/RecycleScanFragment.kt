@@ -178,7 +178,7 @@ class RecycleScanFragment: BaseFragment() {
                 lowerText = info.utilizeInfo,
                 imageResId = R.drawable.ic_satisfied,
                 reportListener = offerReportListener,
-                reportBtnText = "Изменить предложение",
+                reportBtnText = "Изменить",
                 offerDbRecord = null, // offer must not be a selected item!!!
                 mayMatchList = uiState.mayMatch,
                 relatedList = uiState.related,
@@ -194,7 +194,7 @@ class RecycleScanFragment: BaseFragment() {
                         "чтобы запрос был рассмотрен быстрее ",
                 imageResId = R.drawable.ic_very_dissatisfied,
                 reportListener = offerReportListener,
-                reportBtnText = "Внести предложение",
+                reportBtnText = "Предложить",
                 relatedList = uiState.related,
         )
     }
@@ -211,7 +211,7 @@ class RecycleScanFragment: BaseFragment() {
                 lowerText = info.utilizeInfo,
                 imageResId = R.drawable.ic_dissatisfied,
                 reportListener = offerReportListener,
-                reportBtnText = "Внести предложение",
+                reportBtnText = "Предложить",
                 offerDbRecord = uiState.offer,
                 relatedList = uiState.related,
         )
@@ -225,7 +225,7 @@ class RecycleScanFragment: BaseFragment() {
                 lowerText = info.utilizeInfo,
                 imageResId = R.drawable.ic_satisfied,
                 reportListener = offerReportListener,
-                reportBtnText = "Собщить об ошибке",
+                reportBtnText = "Изменить",
                 bookmarkBtnText = "В закладки",
                 offerDbRecord = uiState.offer,
                 mayMatchList = uiState.mayMatch.filter { it.globalId != content.record.globalId },
@@ -254,7 +254,7 @@ class RecycleScanFragment: BaseFragment() {
             setUi(
                     title = title,
                     lowerText ="An error while ${exception.reason}",
-                    scanBtnText = "Сканировать",
+                    scanBtnText = "Скан",
                     reportListener = sendExceptionReportListener,
                     reportBtnText = reportBtnText,
                     isException = true
@@ -267,7 +267,7 @@ class RecycleScanFragment: BaseFragment() {
             doScanning: Boolean = false,
             productCode: ProductCode? = null,
             isScanBtnClickable: Boolean = true,
-            scanBtnText: String = "Сканировать",
+            scanBtnText: String = "Скан",
             title: CharSequence? = null,
             upperText: CharSequence? = null,
             lowerText: CharSequence? = null,
