@@ -1,0 +1,8 @@
+// links
+recycle png source: https://www.flaticon.com/free-icon/recycle_3173010?term=recycle&page=1&position=14&page=1&position=14&related_id=3173010&origin=tag
+
+// todo
+
+
+// notes
+objectbox entities must not have '_' character in packages or anywhere else

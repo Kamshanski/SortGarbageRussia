@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/recycleScanFragment">
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="edu.kamshanski.sortgarbagerussia.ui.main.settings.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/bookmarksFragment"
+        android:name="edu.kamshanski.sortgarbagerussia.ui.main.saved.SavedFragment"
+        android:label="BookmarksFragment" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="edu.kamshanski.sortgarbagerussia.ui.main.map.MapFragment"
+        android:label="MapFragment" />
+    <fragment
+        android:id="@+id/readArticleMenuFragment"
+        android:name="edu.kamshanski.sortgarbagerussia.ui.main.read_articles_menu.ReadArticleMenuFragment"
+        android:label="ReadArticleMenuFragment" />
+    <fragment
+        android:id="@+id/recycleScanFragment"
+        android:name="edu.kamshanski.sortgarbagerussia.ui.main.recycle_scan.RecycleScanFragment"
+        android:label="RecycleScanFragment" >
+        <action
+            android:id="@+id/action_recycleScanFragment_to_offerEditDialog"
+            app:destination="@id/offerEditDialog" />
+    </fragment>
+    <dialog
+        android:id="@+id/offerEditDialog"
+        android:name="edu.kamshanski.sortgarbagerussia.ui.dialogs.OfferEditDialog"
+        android:label="OfferEditDialog">
+        <argument
+            android:name="dialogTitle"
+            app:argType="string"
+            android:defaultValue="Dialog title is not passed"/>
+        <argument
+            android:name="offer"
+            app:argType="edu.kamshanski.sortgarbagerussia.model.coreentities.RecycleOffer"
+            app:nullable="true" />
+    </dialog>
+</navigation>
